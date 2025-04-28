@@ -10,18 +10,34 @@
 </head>
 
 <body>
-    <!--Encabezado-->
+    <!--Barra de navegación con Bootstrap-->
     <header>
-        <a href="../index.html"> <img src="../medios/logo-blanco.png" alt="Logo Taylor Swift"></a>
-    <!--Menú-->
-        <nav>
-            <ul>
-                <li> <a href="../index.html"> HOME </a></li>
-                <li> <a href="#"> NOVEDADES </a></li>
-                <li> <a href="./historia.html"> HISTORIA </a></li>
-                <li> <a href="./discografia.html"> DISCOGRAFÍA </a></li>
-                <li> <a href="./contacto.html"> CONTACTO </a></li>
-            </ul>
+        <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a href="../index.html"> <img src="../medios/logo-blanco.png" id="logo-header" alt="Logo Taylor Swift"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary" aria-current="page" href="#">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">HISTORIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./discografia.html">DISCOGRAFÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -31,48 +47,34 @@
             <h1> NOVEDADES </h1>
         </section>
 
-        <section>
-            <h2> Escuchá las últimas <i>Taylor's Version</i> </h2>
-
-            <div>
-                <p class="titulos-albumes"> THE TORTURED POETS DEPARTMENT </p>
-
-                <div class="contenedor-albumes">
-                    <div class="textos-albumes">
-                        <p> <i> The Tortured Poets Department (TTPD) </i> es el undécimo álbum de estudio de Taylor Swift, lanzado en 2024. Este proyecto marca una nueva etapa en su evolución artística, con un enfoque más íntimo y lírico. A través de una mezcla de pop alternativo, electrónica sutil y baladas melancólicas, Swift explora temas como el desamor, la pérdida, la autoexploración y la complejidad emocional. Con colaboraciones destacadas y una producción cuidada, TTPD ha sido aclamado tanto por la crítica como por sus fans, consolidando aún más el estatus de Swift como una de las artistas más influyentes de su generación. </p>
-                    </div>
-
-                    <div class="spotify">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5H7ixXZfsNMGbIE5OBSpcb?utm_source=generator" frameBorder="0" allowfullscreen="" width="80%" height="200px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        </div>
+        <section class="contenedor">
+            <h2>Escuchá su último disco</h2>
+            <div class="contenedor-novedades">
+                <div class="texto-novedades">
+                    <p> <i>The Tortured Poets Department (TTPD)</i> es el undécimo álbum de estudio de Taylor Swift, lanzado en 2024. Este proyecto marca una nueva etapa en su evolución artística, con un enfoque más íntimo y lírico. A través de una mezcla de pop alternativo, electrónica sutil y baladas melancólicas, Swift explora temas como el desamor, la pérdida, la autoexploración y la complejidad emocional. Con colaboraciones destacadas y una producción cuidada, TTPD ha sido aclamado tanto por la crítica como por sus fans, consolidando aún más el estatus de Swift como una de las artistas más influyentes de su generación.</p>
+                </div>
+                <div class="spotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5H7ixXZfsNMGbIE5OBSpcb?utm_source=generator" frameBorder="0" allowfullscreen="" width="85%" height="200px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
 
-            <div>
-                <p class="titulos-albumes"> MIDNIGHTS </p>
-
-                <div class="contenedor-albumes">
-                    <div class="textos-albumes">
-                        <p> <i> Midnights </i> es el décimo álbum de estudio de Taylor Swift, lanzado en 2022. Concebido como una colección de historias contadas desde noches de insomnio a lo largo de su vida, el disco combina sonidos de synth-pop, electrónica suave y letras introspectivas. Con una estética nocturna y confesional, Swift navega por emociones como la ansiedad, la ambición, el amor y la autoaceptación. Midnights fue un éxito comercial y crítico, consolidando su capacidad para reinventarse sin perder su esencia narrativa. </p>
-                    </div>
-                
-                    <div class="spotify">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/151w1FgRZfnKZA9FEcg9Z3?utm_source=generator" frameBorder="0" allowfullscreen="" width="80%" height="200px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
+            <h2>The Eras Tour: la gira más exitosa de la historia</h2>
+            <div class="contenedor-novedades">
+                <div class="texto-novedades">
+                    <p><i>The Eras Tour</i> de Taylor Swift, lanzada en 2023, se consolidó como la gira más exitosa de la historia de la música. Con una mezcla de éxitos de todas las etapas de su carrera, la gira rompió récords de asistencia y recaudación. Cada presentación ofreció una experiencia única, celebrando su evolución musical. <i>The Eras Tour</i> demostró la versatilidad de Taylor y su capacidad para conectar con su audiencia, reafirmando su lugar como una de las artistas más influyentes de la música contemporánea. A lo largo de su recorrido, la gira capturó la atención global, trascendiendo fronteras y consolidando a Taylor como una superestrella internacional. Sin duda, es un fenómeno cultural que quedará marcado en la historia de la música.</p>
+                </div>
+                <div class="imagenes-novedades">
+                    <img src="../medios/tour.jpg" id="img-tour" alt="The Eras Tour">
                 </div>
             </div>
 
-            <div>
-                <p class="titulos-albumes"> EVERMORE </p>
-
-                <div class="contenedor-albumes">
-                    <div class="textos-albumes">
-                        <p> <i> Evermore </i> es el noveno álbum de estudio de Taylor Swift, lanzado en 2020 como una continuación de Folklore. Profundizando en el folk, el indie y el pop alternativo, el álbum expande su universo narrativo con historias ficticias y reales, abordando temas como la nostalgia, la traición, el duelo y la esperanza. Con un tono melancólico y colaboraciones notables, Evermore reafirma el talento de Swift para la composición lírica y su versatilidad sonora. </p>
-                    </div>
-                
-                    <div class="spotify">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2Xoteh7uEpea4TohMxjtaq?utm_source=generator" frameBorder="0" allowfullscreen="" width="80%" height="200px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
+            <h2>The Eras Tour: la película</h2>
+            <div class="contenedor-novedades">
+                <div class="texto-novedades">
+                    <p><i>The Eras Tour</i> es la gira más exitosa de la historia de Taylor Swift, y su película, lanzada en 2023, capturó la magia de este monumental evento. A través de un recorrido por las distintas etapas de su carrera, la película ofrece a los fans una experiencia única, mostrando no solo los momentos más emblemáticos de los conciertos, sino también los detalles detrás de la puesta en escena, los ensayos y las emociones de la artista. La dirección cuidada y la calidad cinematográfica transforman el show en un espectáculo visual inolvidable. Se destacan los cambios de vestuario, las coreografías y la energía del público en cada función. La película también incluye entrevistas y escenas exclusivas, proporcionando un vistazo íntimo a la gira que rompió récords de taquilla y se convirtió en un fenómeno global. Con su estreno en cines, <i>The Eras Tour</i> trascendió como un éxito cinematográfico, acercando aún más a Taylor a nivel mundial.</p>
+                </div>
+                <div class="imagenes-novedades">
+                    <img src="../medios/movie.jpeg" alt="Película The Eras Tour">
                 </div>
             </div>
         </section>
@@ -80,17 +82,18 @@
 
     <!--Pie de página-->
     <footer>
-        <div class="footer-logo">
-            <img src="../medios/logo-blanco.png" alt="Logo Taylor Swift"></a>
+        <div>
+            <img src="../medios/logo-blanco.png" id="logo-footer" alt="Logo Taylor Swift"></a>
             <p> ¡Seguinos en nuestras redes sociales! </p>
         </div>
 
         <div class="redes-sociales">
-            <a href="https://www.instagram.com/taylorswift/"> <img src="../medios/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/"> <img src="../medios/facebook.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/@TaylorSwift"> <img src="../medios/youtube.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/taylorswift/" target="_blank"> <img src="../medios/instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/taylorswift13/" target="_blank"> <img src="../medios/x.png" alt="X"></a>
+            <a href="https://www.youtube.com/@TaylorSwift" target="_blank"> <img src="../medios/youtube.png" alt="YouTube"></a>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 

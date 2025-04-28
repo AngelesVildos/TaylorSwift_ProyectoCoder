@@ -10,18 +10,34 @@
 </head>
 
 <body>
-    <!--Encabezado-->
+    <!--Barra de navegación con Bootstrap-->
     <header>
-        <a href="../index.html"> <img src="../medios/logo-blanco.png" alt="Logo Taylor Swift"></a>
-    <!--Menú-->
-        <nav>
-            <ul>
-                <li> <a href="../index.html"> HOME </a></li>
-                <li> <a href="./novedades.html"> NOVEDADES </a></li>
-                <li> <a href="#"> HISTORIA </a></li>
-                <li> <a href="./discografia.html"> DISCOGRAFÍA </a></li>
-                <li> <a href="./contacto.html"> CONTACTO </a></li>
-            </ul>
+        <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a href="../index.html"> <img src="../medios/logo-blanco.png" id="logo-header" alt="Logo Taylor Swift"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./novedades.html">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary" aria-current="page" href="#">HISTORIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./discografia.html">DISCOGRAFÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -31,31 +47,47 @@
             <h1> HISTORIA </h1>
         </section>
 
-        <section class="contenedor-grid">
-            <h1 class="titulo-grid"> Un recorrido por su historia </h1>
-
-            <p class="texto-grid-1"> Taylor Swift nació el 13 de diciembre de 1989 en Reading, Pensilvania, Estados Unidos. Desde muy chica mostró un profundo interés por la música, en especial por el género country. Comenzó a componer canciones a los 12 años y a tocar la guitarra, demostrando un talento precoz. A los 14, se mudó con su familia a Nashville, Tennessee, la capital del country, para perseguir su sueño artístico. Su álbum debut, Taylor Swift (2006), la posicionó rápidamente como una joven promesa, gracias a éxitos como "Tim McGraw" y "Teardrops on My Guitar". Con Fearless (2008), se consagró a nivel nacional e internacional, ganando varios premios Grammy. Su estilo se caracterizaba por letras personales que narraban historias de amor, desamor y crecimiento. En Speak Now (2010) y Red (2012), amplió su sonido con toques de pop y rock, mostrando madurez artística. A lo largo de esta etapa, Swift también comenzó a ganar notoriedad por su fuerte presencia mediática y conexión con sus fans.</p>
+        <section class="contenedor">
+            <h2>Un recorrido por su historia</h2>
+            <div class="contenedor-grid">
+                <p class="texto-grid-1">Taylor Swift nació el 13 de diciembre de 1989 en Reading, Pensilvania, Estados Unidos. Desde muy chica mostró un profundo interés por la música, especialmente por el género country. A los 12 años comenzó a componer canciones y a tocar la guitarra. A los 14, se mudó con su familia a Nashville, Tennessee, "la capital del country", para seguir persiguiendo su sueño. Su álbum debut, <i>Taylor Swift</i> (2006), la posicionó rápidamente como una joven promesa. Con <i>Fearless</i> (2008), se consagró a nivel nacional e internacional, ganando varios premios Grammy. Su estilo se caracterizaba por letras personales que narraban historias de amor y crecimiento emocional. En <i>Speak Now</i> (2010) y <i>Red</i> (2012), amplió su sonido con toques de pop y rock, mostrando madurez artística. Durante esta etapa, también comenzó a ganar notoriedad por su fuerte presencia mediática y conexión con sus fans alrededor del mundo.</p>
            
-            <p class="texto-grid-2"> El gran salto al pop lo dio con el álbum 1989 (2014), que incluyó éxitos como "Shake It Off", "Blank Space" y "Style", transformándola en una superestrella global. Luego lanzó Reputation (2017), con una estética más oscura y centrada en temas de imagen pública y poder. En Lover (2019) regresó a un tono más romántico y luminoso. Durante la pandemia sorprendió con Folklore y Evermore (2020), dos discos más introspectivos y alternativos que fueron aclamados por la crítica. En 2021 inició la regrabación de sus primeros discos como Fearless (Taylor's Version) y Red (Taylor's Version), en respuesta a la pérdida de los derechos de sus masters, reforzando su postura sobre el control artístico. En 2023 lanzó Midnights, y comenzó The Eras Tour, una gira monumental que batió récords de asistencia y recaudación. Hoy, Taylor Swift es una de las artistas más influyentes y versátiles de la música contemporánea, con millones de seguidores y una carrera que sigue creciendo con fuerza. </p>
+                <p class="texto-grid-2">A lo largo de su carrera, Taylor Swift no solo redefinió su sonido, sino también su imagen y su influencia en la cultura popular. Se destacó por su capacidad para reinventarse en cada era musical, manteniéndose siempre auténtica a su esencia. Su habilidad para conectar con diferentes generaciones de fans, junto a su talento como compositora y narradora, la consolidaron como una voz única en la industria. Además de su éxito musical, ha sido reconocida por su activismo en temas como los derechos de autor, la equidad de género y el apoyo a causas sociales. Cada proyecto lanzado no solo mostró una evolución artística, sino también un crecimiento personal reflejado en sus letras y propuestas visuales.</p>
 
-            <img class="img-grid-1" src="../medios/img-grid-1.jpg" alt="">
-            <img class="img-grid-2" src="../medios/img-grid-2.jpg" alt="">
+                <p class="texto-grid-3">El gran salto al pop lo dio con el álbum <i>1989</i> (2014), que incluyó éxitos como "Shake It Off", "Blank Space" y "Style", transformándola en una superestrella global. Luego lanzó <i>Reputation</i> (2017), con una estética más oscura y centrada en temas de imagen pública y poder. En <i>Lover</i> (2019) regresó a un tono más romántico y luminoso. Durante la pandemia sorprendió con <i>Folklore</i> y <i>Evermore</i> (2020), dos discos más introspectivos y alternativos que fueron aclamados por la crítica. En 2021 inició la regrabación de sus primeros discos como <i>Fearless (Taylor's Version)</i> y <i>Red (Taylor's Version)</i>. En 2023 lanzó <i>Midnights</i>, y comenzó <i>The Eras Tour</i>, una gira monumental que batió récords de asistencia y recaudación. Al dóa de hoy, Taylor Swift cuenta con once álbumes de estudio, cuatro álbumes regrabados y millones de seguidores, siendo una de las artistas más influyentes en la historia de la industria musical.</p>
+
+                <div class="contedeor-img-grid1">
+                    <img class="img-grid-1" src="../medios/img-grid-1.jpg" alt="">
+                    <figcaption>Taylor Swift en uno de sus primeros conciertos al aire libre, 2006</figcaption>
+                </div>
+
+                <div class="contedeor-img-grid2">
+                    <img class="img-grid-2" src="../medios/img-grid-2.jpg" alt="">
+                    <figcaption>Taylor Swift durante su gira Red Tour, 2013</figcaption>
+                </div>
+
+                <div class="contedeor-img-grid3">
+                    <img class="img-grid-3" src="../medios/img-grid-3.jpg" alt="">
+                    <figcaption>Taylor Swift durante su gira The Eras Tour en Buenos Aires, 2023</figcaption>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--Pie de página-->
     <footer>
-        <div class="footer-logo">
-            <img src="../medios/logo-blanco.png" alt="Logo Taylor Swift"></a>
+        <div>
+            <img src="../medios/logo-blanco.png" id="logo-footer" alt="Logo Taylor Swift"></a>
             <p> ¡Seguinos en nuestras redes sociales! </p>
         </div>
 
         <div class="redes-sociales">
-            <a href="https://www.instagram.com/taylorswift/"> <img src="../medios/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/"> <img src="../medios/facebook.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/@TaylorSwift"> <img src="../medios/youtube.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/taylorswift/" target="_blank"> <img src="../medios/instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/taylorswift13/" target="_blank"> <img src="../medios/x.png" alt="X"></a>
+            <a href="https://www.youtube.com/@TaylorSwift" target="_blank"> <img src="../medios/youtube.png" alt="YouTube"></a>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
