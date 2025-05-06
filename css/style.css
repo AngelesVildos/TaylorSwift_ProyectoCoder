@@ -25,7 +25,7 @@ body {
 h1 {
     color: black;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 h2 {
@@ -33,8 +33,7 @@ h2 {
     font-size: 2.2rem;
     font-weight: 350;
     font-style: italic;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px 30px 0px;
     border-bottom: black 0.5px solid;
 }
 
@@ -56,18 +55,17 @@ h2 {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-collapse {
+#navbar-desplegable {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 0;
-    top: 0;
+    margin-left: auto;
+    gap: 5px;
 }
 
-.navbar-collapse a {
+#navbar-desplegable a {
     color: white;
 }
 
-.navbar-collapse ul li:hover {
+#navbar-desplegable li a:hover {
     color: black;
     background-color: white;
 }
@@ -119,11 +117,25 @@ h2 {
     height: 75px;
 }
 
+.logros-index {
+    width: 100%;
+    height: 200px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .contenedor-index {
-    height: 607px;
+    width: 100%;
+    height: 407px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0px 50px 100px 50px;
 }
 
 .iconos-index {
@@ -198,7 +210,7 @@ h2 {
         "texto2 texto2 imagen2"
         "imagen3 texto3 texto3"
         "imagen3 texto3 texto3";
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -326,8 +338,7 @@ footer {
 
 #logo-footer {
     width: 200px;
-    margin: 10px;
-    margin-top: 50px;
+    margin: 50px 10px 10px 10px;
 }
 
 .redes-sociales img {
@@ -459,10 +470,6 @@ footer {
 
     #logo-footer {
         width: 170px;
-    }
-
-    .navbar-toggler {
-        border: 0.5px solid rgb(50, 50, 50);
     }
 
 }
