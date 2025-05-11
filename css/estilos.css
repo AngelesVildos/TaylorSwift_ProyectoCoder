@@ -147,7 +147,6 @@ header #navbar #navbar-desplegable a:hover {
   transform: translateX(-50%);
   transition: opacity 0.3s ease, transform 0.3s ease;
   font-size: 1.5rem;
-  padding-top: 15%;
   color: white;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.6);
@@ -378,7 +377,7 @@ footer .redes-sociales img {
   }
   /*  page - index  */
   .portada-index {
-    height: 100dvh;
+    height: 95vh;
   }
   .portada-index .portada-texto {
     width: 80%;
@@ -392,7 +391,7 @@ footer .redes-sociales img {
     font-size: 1.3rem;
   }
   .titulos-index {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
   .contenedor-eras .card2 {
