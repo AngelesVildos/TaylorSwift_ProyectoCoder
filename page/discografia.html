@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title> Taylor Swift - DISCOGRAFÍA </title>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
@@ -48,9 +51,10 @@
         </section>
 
         <section class="contenedor">
-            <h2> La discografía completa de Taylor Swift </h2>
+            <div class="subrayado">
+                <h2 data-aos="fade-right">La discografía completa de Taylor Swift</h2>
+            </div>
             <p>La discografía de Taylor Swift refleja una evolución musical constante, comenzando con sus raíces country en <i>Taylor Swift</i> (2006), <i>Fearless</i> (2008) y <i>Speak Now</i> (2010). Luego exploró un sonido más pop con <i>Red</i> (2012), que culminó en el éxito masivo de <i>1989</i> (2014) y el tono más oscuro de <i>Reputation</i> (2017). En <i>Lover</i> (2019) mostró una faceta más romántica y colorida. En 2020, se volcó hacia una estética indie y folk con <i>Folklore</i> y <i>Evermore</i>. Finalmente, regresó al pop electrónico con <i>Midnights</i> (2022) y profundizó en lo conceptual con <i>The Tortured Poets Department</i> (2024).</p>
-
             <div class="contenedor-cards">
                 <div class="card">
                     <img src="../medios/disco11.jpg" class="card-img-top" alt="...">
@@ -152,7 +156,9 @@
                 </div>
             </div>
 
-            <h2><i>Taylor's Version</i></h2>
+            <div class="subrayado">
+                <h2 data-aos="fade-right"><i>Taylor's Version</i></h2>
+            </div>
             <p>En 2021, Taylor Swift inició un ambicioso proyecto para recuperar la propiedad de su obra: las regrabaciones de sus primeros álbumes bajo el sello <i>Taylor’s Version</i>. El primero fue <i>Fearless (Taylor’s Version)</i>, seguido por <i>Red</i>, <i>Speak Now</i> y <i>1989</i>, todos con nuevas grabaciones y canciones inéditas “From the Vault”. Este proceso no solo reafirma su control artístico, sino que también revitaliza su legado musical con un enfoque actual, fortaleciendo el vínculo con sus fans y la industria.</p>
 
             <div class="contenedor-cards">
@@ -209,6 +215,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

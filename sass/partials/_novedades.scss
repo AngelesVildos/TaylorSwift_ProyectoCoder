@@ -3,6 +3,7 @@
 .contenedor-novedades {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
     .texto-novedades {
         width: 50%;
     }
@@ -18,7 +19,7 @@
         img {
             width: 100%;
             height: auto;
-            padding: 70px 0px 70px 70px;
+            padding: 20px 0px 70px 70px;
         }
     }
 }

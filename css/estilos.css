@@ -29,14 +29,17 @@ h2 {
   font-size: 2.2rem;
   font-weight: 350;
   font-style: italic;
-  margin: 30px 0px 30px 0px;
-  border-bottom: 0.5px solid black;
 }
 
 h5 {
   font-size: 1.3rem;
   font-family: "Special Gothic Expanded One", sans-serif;
   font-weight: 400;
+}
+
+.subrayado {
+  border-bottom: 0.5px solid black;
+  margin-bottom: 30px;
 }
 
 .contenedor {
@@ -196,6 +199,7 @@ header #navbar #navbar-desplegable a:hover {
 .contenedor-novedades {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .contenedor-novedades .texto-novedades {
   width: 50%;
@@ -213,7 +217,7 @@ header #navbar #navbar-desplegable a:hover {
 .contenedor-novedades .imagenes-novedades img {
   width: 100%;
   height: auto;
-  padding: 70px 0px 70px 70px;
+  padding: 20px 0px 70px 70px;
 }
 
 /*  page - historia  */
@@ -304,35 +308,39 @@ header #navbar #navbar-desplegable a:hover {
 .contenedor-contacto {
   display: flex;
 }
-.contenedor-contacto .formulario, .contenedor-contacto .maps {
+.contenedor-contacto .formulario {
   width: 50%;
-  padding: 20px;
+  padding-right: 30px;
 }
-.contenedor-contacto .formulario .form-control:focus, .contenedor-contacto .maps .form-control:focus {
+.contenedor-contacto .formulario .form-control:focus {
   outline: none;
   border-color: rgba(235, 235, 235, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.contenedor-contacto .formulario #boton-contacto, .contenedor-contacto .maps #boton-contacto {
+.contenedor-contacto .formulario #boton-contacto {
   background-color: white;
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: 20px;
   width: 80px;
 }
-.contenedor-contacto .formulario #boton-contacto:hover, .contenedor-contacto .maps #boton-contacto:hover {
+.contenedor-contacto .formulario #boton-contacto:hover {
   color: white;
   background-color: black;
 }
-.contenedor-contacto .formulario .boton-checkbox:checked, .contenedor-contacto .maps .boton-checkbox:checked {
+.contenedor-contacto .formulario .boton-checkbox:checked {
   background-color: black;
   border-color: black;
 }
-.contenedor-contacto .formulario .boton-checkbox:focus, .contenedor-contacto .maps .boton-checkbox:focus {
+.contenedor-contacto .formulario .boton-checkbox:focus {
   outline: none;
   border-color: rgba(235, 235, 235, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+.contenedor-contacto .maps {
+  width: 50%;
+}
+
 /*  footer  */
 footer {
   width: 100%;
@@ -382,6 +390,10 @@ footer .redes-sociales img {
   }
   .portada-index .portada-texto #boton-index {
     font-size: 1.3rem;
+  }
+  .titulos-index {
+    width: 80%;
+    margin: auto;
   }
   .contenedor-eras .card2 {
     width: 90%;
@@ -436,7 +448,7 @@ footer .redes-sociales img {
   .contenedor-contacto {
     flex-direction: column;
   }
-  .contenedor-contacto .formulario, .contenedor-contacto .maps {
+  .contenedor-contacto .formulario {
     width: 100%;
     padding: 0;
     margin-bottom: 50px;
