@@ -1,0 +1,47 @@
+/*  page - historia  */
+
+.contenedor-grid {    
+    display: grid;
+    grid-template-areas:
+        "imagen1 texto1 texto1"
+        "imagen1 texto1 texto1"
+        "texto2 texto2 imagen2"
+        "imagen3 texto3 texto3"
+        "imagen3 texto3 texto3";
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    .texto-grid-1 {
+        grid-area: texto1;
+    }
+    .texto-grid-2 {
+        grid-area: texto2;
+    }
+    .texto-grid-3 {
+        grid-area: texto3;
+    }
+    .contedeor-img-grid1 {
+        grid-area: imagen1;
+        text-align: center;
+    }
+    .contedeor-img-grid2 {
+        grid-area: imagen2;
+        text-align: center;
+    }
+    .contedeor-img-grid3 {
+        grid-area: imagen3;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    figcaption {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: gray;
+    }
+}

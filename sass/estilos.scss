@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+@import "./partials/variables";
+
+/*  body  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: $fondo;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+h2 {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 350;
+    font-style: italic;
+    margin: 30px 0px 30px 0px;
+    border-bottom: 0.5px solid black;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-family: $font-secundaria;
+    font-weight: 400;
+}
+
+.contenedor {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+/*  header  */
+
+header {
+    #navbar {
+    background-color: black;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+        #logo-header {
+            width: 200px;
+        }
+        #navbar-desplegable {
+            display: flex;
+            margin-left: auto;
+            gap: 5px;
+            a {
+                color: white;
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+@import "./partials/index";
+@import "./partials/novedades";
+@import "./partials/historia";
+@import "./partials/discografia";
+@import "./partials/contacto";
+
+/*  footer  */
+
+footer {
+    width: 100%;
+    height: 250px;   
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    #logo-footer {
+        width: 200px;
+        margin: 50px 10px 10px 10px;
+        }
+    .redes-sociales {
+        img {
+        width: 30px;
+        margin: 5px
+        }
+    }    
+}
+
+@import "./partials/mediaquery-mobile";

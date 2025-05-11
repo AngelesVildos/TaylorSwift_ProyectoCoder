@@ -1,0 +1,24 @@
+/*  page - novedades  */
+
+.contenedor-novedades {
+    display: flex;
+    align-items: center;
+    .texto-novedades {
+        width: 50%;
+    }
+    .spotify {
+        width: 50%;
+        text-align: center;
+        padding-top: 40px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .imagenes-novedades {
+        width: 50%;
+        img {
+            width: 100%;
+            height: auto;
+            padding: 70px 0px 70px 70px;
+        }
+    }
+}

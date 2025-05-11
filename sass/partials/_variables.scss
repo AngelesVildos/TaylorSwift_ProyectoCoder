@@ -1,0 +1,21 @@
+$font-principal: "Roboto", sans-serif;
+$font-secundaria: "Special Gothic Expanded One", sans-serif;
+$fondo: linear-gradient(to right bottom, #bcbcbc, #cccccc, #dddddd, #eeeeee, #ffffff);
+
+
+@mixin hover-negro {
+    color: white;
+    background-color: black;
+}
+
+@mixin focus {
+    outline: none;
+    border-color: rgba(235, 235, 235, 0.3); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
+}
+
+@mixin zoom-elemento  {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}

@@ -1,0 +1,138 @@
+/*  media query - mobile ______________________________________________________________________________________________*/
+
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    .contenedor {
+        width: 80%;
+    }
+
+    header {
+        #logo-header {
+            width: 170px;
+        }
+    }
+
+    /*  page - index  */
+
+    .portada-index {
+        height: 100dvh;
+        .portada-texto {
+            width: 80%;
+            font-size: 1.7rem;
+            margin: auto;
+            .portada-titulo {
+                font-size: 2rem;
+            }
+            #boton-index {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .contenedor-eras {
+        .card2 {
+            width: 90%;
+        }
+    }
+   
+    .contenedor-index {
+        height: 90vh;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        .iconos-index {
+            img {
+                width: 90px;
+                height: auto;
+            }
+            p {
+            font-size: 1.5rem;
+            }
+        }
+    }
+
+    .titulo-banner {
+        height: 250px;
+    }
+
+    /*  page - novedades */
+
+    .contenedor-novedades {
+        flex-direction: column;
+        .texto-novedades {
+            width: 100%;
+        }
+        .spotify {
+            width: 100%;
+            display: block;
+        }
+        .imagenes-novedades {
+            width: 100%;
+            margin: auto;
+            img {
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /*  page - historia */
+
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imagen1"
+            "texto1"
+            "imagen2"
+            "texto2"
+            "imagen3"
+            "texto3";
+    }
+
+    /*  page - discografía */
+
+    .contenedor-cards {
+        .card {
+            width: 37%;
+        }
+    }
+    
+    /*  page - contacto */
+
+    .contenedor-contacto {
+        flex-direction: column;
+        .formulario {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 50px;
+        }
+        .maps {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    /*  footer */
+
+   footer {
+        font-size: 1rem;
+        #logo-footer {
+            width: 170px;
+        }
+    }
+}
