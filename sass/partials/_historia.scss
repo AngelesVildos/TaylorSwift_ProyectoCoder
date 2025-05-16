@@ -40,8 +40,6 @@
         display: block;
     }
     figcaption {
-        margin-top: 10px;
-        font-size: 1rem;
-        color: gray;
+        @include figcaption;
     }
 }

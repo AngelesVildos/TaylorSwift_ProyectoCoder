@@ -19,7 +19,11 @@
         img {
             width: 100%;
             height: auto;
-            padding: 20px 0px 70px 70px;
+            padding: 20px 0px 0px 70px;
+        }
+        figcaption {
+            @include figcaption;
+            margin-left: 70px;
         }
     }
 }

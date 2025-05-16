@@ -19,3 +19,10 @@ $fondo: linear-gradient(to right bottom, #bcbcbc, #cccccc, #dddddd, #eeeeee, #ff
     transform: scale(1.1);
     cursor: pointer;
 }
+
+@mixin figcaption {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: gray;
+    text-align: center;
+}

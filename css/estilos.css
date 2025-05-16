@@ -216,7 +216,14 @@ header #navbar #navbar-desplegable a:hover {
 .contenedor-novedades .imagenes-novedades img {
   width: 100%;
   height: auto;
-  padding: 20px 0px 70px 70px;
+  padding: 20px 0px 0px 70px;
+}
+.contenedor-novedades .imagenes-novedades figcaption {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: gray;
+  text-align: center;
+  margin-left: 70px;
 }
 
 /*  page - historia  */
@@ -257,8 +264,9 @@ header #navbar #navbar-desplegable a:hover {
 }
 .contenedor-grid figcaption {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: gray;
+  text-align: center;
 }
 
 /*  page - discografía  */
