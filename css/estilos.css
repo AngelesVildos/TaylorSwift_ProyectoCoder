@@ -357,7 +357,7 @@ header #navbar #navbar-desplegable a:hover {
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: 20px;
-  width: 80px;
+  width: 100px;
 }
 .mailing #boton-suscribirme:hover {
   color: white;
@@ -468,7 +468,7 @@ footer .redes-sociales img {
   .contenedor-form {
     flex-direction: column;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .contenedor-form .formulario {
     width: 100%;
