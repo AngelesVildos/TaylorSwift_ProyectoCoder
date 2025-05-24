@@ -43,9 +43,21 @@ h3 {
 }
 
 .contenedor {
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-bottom: 80px;
+}
+
+.titulo-banner, .titulos-index {
+  width: 100%;
+  height: 300px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /*  header  */
@@ -55,7 +67,7 @@ header #navbar {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 }
 header #navbar #logo-header {
-  width: 200px;
+  width: 170px;
 }
 header #navbar #menu-hamburguesa {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -83,7 +95,7 @@ header #navbar #navbar-desplegable a:hover {
   align-items: center;
 }
 .portada-index .portada-texto {
-  width: 35%;
+  width: 50%;
   margin-left: 10%;
   color: white;
   font-size: 1.85rem;
@@ -91,7 +103,7 @@ header #navbar #navbar-desplegable a:hover {
 .portada-index .portada-texto .portada-titulo {
   font-family: "Special Gothic Expanded One", sans-serif;
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 2.3rem;
 }
 .portada-index .portada-texto .portada-titulo p {
   margin-top: 30px;
@@ -107,18 +119,6 @@ header #navbar #navbar-desplegable a:hover {
   color: white;
   background-color: black;
   border: 1px solid black;
-}
-
-.titulo-banner, .titulos-index {
-  width: 100%;
-  height: 300px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .titulos-index {
@@ -315,40 +315,53 @@ header #navbar #navbar-desplegable a:hover {
 }
 
 /*  page - contacto  */
-.contenedor-contacto {
+.contenedor-form {
   display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
-.contenedor-contacto .formulario {
+.contenedor-form .formulario {
   width: 50%;
   padding-right: 30px;
 }
-.contenedor-contacto .formulario .form-control:focus {
+.contenedor-form .formulario .form-control:focus {
   outline: none;
   border-color: rgba(235, 235, 235, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.contenedor-contacto .formulario #boton-contacto {
+.contenedor-form .formulario #boton-contacto {
   background-color: white;
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: 20px;
   width: 80px;
 }
-.contenedor-contacto .formulario #boton-contacto:hover {
+.contenedor-form .formulario #boton-contacto:hover {
   color: white;
   background-color: black;
 }
-.contenedor-contacto .formulario .boton-checkbox:checked {
-  background-color: black;
-  border-color: black;
+.contenedor-form .maps {
+  width: 50%;
 }
-.contenedor-contacto .formulario .boton-checkbox:focus {
+
+.mailing .form-control {
+  width: 47%;
+}
+.mailing .form-control:focus {
   outline: none;
   border-color: rgba(235, 235, 235, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.contenedor-contacto .maps {
-  width: 50%;
+.mailing #boton-suscribirme {
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  width: 80px;
+}
+.mailing #boton-suscribirme:hover {
+  color: white;
+  background-color: black;
 }
 
 /*  footer  */
@@ -370,7 +383,7 @@ footer .redes-sociales img {
 }
 
 /*  media query - mobile ______________________________________________________________________________________________*/
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   h1 {
     font-size: 2.6rem;
   }
@@ -382,9 +395,6 @@ footer .redes-sociales img {
   }
   .contenedor {
     width: 80%;
-  }
-  header #logo-header {
-    width: 170px;
   }
   /*  page - index  */
   .portada-index {
@@ -421,9 +431,6 @@ footer .redes-sociales img {
   .contenedor-index .iconos-index p {
     font-size: 1.5rem;
   }
-  .titulo-banner, .titulos-index {
-    height: 250px;
-  }
   /*  page - novedades */
   .contenedor-novedades {
     flex-direction: column;
@@ -458,15 +465,17 @@ footer .redes-sociales img {
     width: 37%;
   }
   /*  page - contacto */
-  .contenedor-contacto {
+  .contenedor-form {
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
-  .contenedor-contacto .formulario {
+  .contenedor-form .formulario {
     width: 100%;
     padding: 0;
     margin-bottom: 50px;
   }
-  .contenedor-contacto .maps {
+  .contenedor-form .maps {
     width: 100%;
     padding: 0;
   }
@@ -474,8 +483,88 @@ footer .redes-sociales img {
   footer {
     font-size: 1rem;
   }
-  footer #logo-footer {
-    width: 170px;
+}
+/*  media query - tablet ______________________________________________________________________________________________*/
+@media (min-width: 576px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .contenedor {
+    width: 80%;
+  }
+  /*  page - index  */
+  .portada-index .portada-texto {
+    width: 80%;
+    font-size: 1.7rem;
+    margin: auto;
+  }
+  .portada-index .portada-texto .portada-titulo {
+    font-size: 2.2rem;
+  }
+  .portada-index .portada-texto #boton-index {
+    font-size: 1.6rem;
+  }
+  .contenedor-eras .card2 {
+    width: 60%;
+  }
+  .contenedor-index {
+    height: 90vh;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+  .contenedor-index .iconos-index img {
+    width: 130px;
+    height: auto;
+  }
+  /*  page - novedades */
+  .contenedor-novedades .texto-novedades {
+    width: 100%;
+  }
+  .contenedor-novedades .spotify {
+    width: 100%;
+  }
+  .contenedor-novedades .imagenes-novedades {
+    width: 100%;
+  }
+  /*  page - historia */
+  .contenedor-grid {
+    display: grid;
+    grid-template-areas: "imagen1 texto1" "imagen1 texto1" "texto2 imagen2" "imagen3 texto3" "imagen3 texto3";
+    grid-template-columns: repeat(2, auto);
+  }
+  /*  page - discografía */
+  /*  page - contacto */
+}
+@media (min-width: 576px) and (max-width: 991.98px) and (min-width: 576px) and (max-width: 768.98px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
+  .contenedor-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagen1" "texto1" "imagen2" "texto2" "imagen3" "texto3";
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) and (min-width: 576px) and (max-width: 650px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
+  .contenedor-cards .card {
+    width: 37%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) and (min-width: 576px) and (max-width: 800px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
+  .contenedor-form {
+    flex-direction: column;
+  }
+  .contenedor-form .formulario {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .contenedor-form .maps {
+    width: 100%;
+    padding: 0;
   }
 }
 

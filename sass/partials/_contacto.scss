@@ -1,7 +1,9 @@
 /*  page - contacto  */
 
-.contenedor-contacto {
+.contenedor-form {
     display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
     .formulario {
         width: 50%;
         padding-right: 30px;
@@ -20,17 +22,27 @@
                 @include hover-negro;
             }
         }
-        .boton-checkbox {
-            &:checked {
-                background-color: black;
-                border-color: black;
-            }
-            &:focus {
-                @include focus;
-            }
-        }
     }
     .maps {
         width: 50%;
+    }
+}
+
+.mailing {
+    .form-control {
+        width: 47%;
+            &:focus {
+                @include focus;
+            }
+    }
+    #boton-suscribirme {
+        background-color: white;
+        color: black;
+        border: 1px solid rgba(0, 0, 0, 0.3); 
+        margin-top: 20px;
+        width: 80px;
+        &:hover {
+            @include hover-negro;
+        }
     }
 }
