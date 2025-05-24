@@ -101,8 +101,8 @@
         .contenedor-cards {
             .card {
                 width: 37%;
+            }
         }
-    }
     }
 
     /*  page - contacto */
@@ -119,6 +119,12 @@
             .maps {
                 width: 100%;
                 padding: 0;
+            }
+        }
+
+        .mailing {
+            .form-control {
+                width: 100%;
             }
         }
     }

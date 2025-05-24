@@ -479,6 +479,9 @@ footer .redes-sociales img {
     width: 100%;
     padding: 0;
   }
+  .mailing .form-control {
+    width: 100%;
+  }
   /*  footer */
   footer {
     font-size: 1rem;
@@ -565,6 +568,9 @@ footer .redes-sociales img {
   .contenedor-form .maps {
     width: 100%;
     padding: 0;
+  }
+  .mailing .form-control {
+    width: 100%;
   }
 }
 
