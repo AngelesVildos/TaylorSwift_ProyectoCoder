@@ -11,14 +11,12 @@
     }
 
     h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor {
         width: 80%;
     }
-
-    /*  page - index  */
 
     .portada-index {
         height: 95vh;
@@ -62,8 +60,6 @@
         }
     }
 
-    /*  page - novedades */
-
     .contenedor-novedades {
         flex-direction: column;
         .texto-novedades {
@@ -88,8 +84,6 @@
         }
     }
 
-    /*  page - historia */
-
     .contenedor-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -101,16 +95,12 @@
             "texto3";
     }
 
-    /*  page - discografía */
-
     .contenedor-cards {
         .card {
             width: 37%;
         }
     }
     
-    /*  page - contacto */
-
     .contenedor-form {
         flex-direction: column;
         margin-top: 20px;
@@ -130,11 +120,5 @@
         .form-control {
             width: 100%;
         }
-    }
-
-    /*  footer */
-
-    footer {
-        font-size: 1rem;
     }
 }

@@ -11,14 +11,12 @@
     }
 
     h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor {
         width: 80%;
     }
-
-    /*  page - index  */
 
     .portada-index {
         .portada-texto {
@@ -39,7 +37,7 @@
             width: 60%;
         }
     }
-   
+
     .contenedor-index {
         height: 90vh;
         flex-direction: column;
@@ -47,27 +45,14 @@
         justify-content: center;
         .iconos-index {
             img {
-                width: 130px;
+                width: 100px;
                 height: auto;
+            }
+            p {
+            font-size: 1.7rem;
             }
         }
     }
-
-    /*  page - novedades */
-
-    .contenedor-novedades {
-        .texto-novedades {
-            width: 100%;
-        }
-        .spotify {
-            width: 100%;
-        }
-        .imagenes-novedades {
-            width: 100%;
-        }
-    }
-
-    /*  page - historia */
 
     .contenedor-grid {    
         display: grid;
@@ -79,53 +64,67 @@
             "imagen3 texto3";
         grid-template-columns: repeat(2, auto);
     }
+}
 
-    @media (min-width: 576px) and (max-width: 768.98px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
+@media (min-width: 576px) and (max-width: 800px) { /* ajuste de media query específico a 800px */
 
-        .contenedor-grid {
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "imagen1"
-                "texto1"
-                "imagen2"
-                "texto2"
-                "imagen3"
-                "texto3";
+    .contenedor-novedades {
+        flex-direction: column;
+            .texto-novedades {
+                width: 100%;
+            }
+            .spotify {
+                width: 100%;
+                display: block;
+            }
+            .imagenes-novedades {
+                width: 100%;
+                margin: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+                figcaption {
+                    margin-left: 0;
+                }
             }
     }
 
-    /*  page - discografía */
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imagen1"
+            "texto1"
+            "imagen2"
+            "texto2"
+            "imagen3"
+            "texto3";
+    }
 
-    @media (min-width: 576px) and (max-width: 650px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
-
-        .contenedor-cards {
-            .card {
-                width: 37%;
-            }
+    .contenedor-cards {
+        .card {
+            width: 37%;
         }
     }
 
-    /*  page - contacto */
-
-    @media (min-width: 576px) and (max-width: 800px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
-
-        .contenedor-form {
-            flex-direction: column;
-            .formulario {
-                width: 100%;
-                padding: 0;
-                margin-bottom: 50px;
-            }
-            .maps {
-                width: 100%;
-                padding: 0;
-            }
+    .contenedor-form {
+        flex-direction: column;
+        .formulario {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 50px;
         }
+        .maps {
+            width: 100%;
+            padding: 0;
+        }
+    }
 
-        .mailing {
-            .form-control {
-                width: 100%;
-            }
+    .mailing {
+        .form-control {
+            width: 100%;
         }
     }
 }

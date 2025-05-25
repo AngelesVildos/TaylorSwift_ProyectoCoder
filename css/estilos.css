@@ -391,12 +391,11 @@ footer .redes-sociales img {
     font-size: 2.2rem;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .contenedor {
     width: 80%;
   }
-  /*  page - index  */
   .portada-index {
     height: 95vh;
   }
@@ -431,7 +430,6 @@ footer .redes-sociales img {
   .contenedor-index .iconos-index p {
     font-size: 1.5rem;
   }
-  /*  page - novedades */
   .contenedor-novedades {
     flex-direction: column;
   }
@@ -455,16 +453,13 @@ footer .redes-sociales img {
   .contenedor-novedades .imagenes-novedades figcaption {
     margin-left: 0;
   }
-  /*  page - historia */
   .contenedor-grid {
     grid-template-columns: 1fr;
     grid-template-areas: "imagen1" "texto1" "imagen2" "texto2" "imagen3" "texto3";
   }
-  /*  page - discografía */
   .contenedor-cards .card {
     width: 37%;
   }
-  /*  page - contacto */
   .contenedor-form {
     flex-direction: column;
     margin-top: 20px;
@@ -482,10 +477,6 @@ footer .redes-sociales img {
   .mailing .form-control {
     width: 100%;
   }
-  /*  footer */
-  footer {
-    font-size: 1rem;
-  }
 }
 /*  media query - tablet ______________________________________________________________________________________________*/
 @media (min-width: 576px) and (max-width: 991.98px) {
@@ -496,12 +487,11 @@ footer .redes-sociales img {
     font-size: 2.2rem;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .contenedor {
     width: 80%;
   }
-  /*  page - index  */
   .portada-index .portada-texto {
     width: 80%;
     font-size: 1.7rem;
@@ -523,40 +513,49 @@ footer .redes-sociales img {
     justify-content: center;
   }
   .contenedor-index .iconos-index img {
-    width: 130px;
+    width: 100px;
     height: auto;
   }
-  /*  page - novedades */
-  .contenedor-novedades .texto-novedades {
-    width: 100%;
+  .contenedor-index .iconos-index p {
+    font-size: 1.7rem;
   }
-  .contenedor-novedades .spotify {
-    width: 100%;
-  }
-  .contenedor-novedades .imagenes-novedades {
-    width: 100%;
-  }
-  /*  page - historia */
   .contenedor-grid {
     display: grid;
     grid-template-areas: "imagen1 texto1" "imagen1 texto1" "texto2 imagen2" "imagen3 texto3" "imagen3 texto3";
     grid-template-columns: repeat(2, auto);
   }
-  /*  page - discografía */
-  /*  page - contacto */
 }
-@media (min-width: 576px) and (max-width: 991.98px) and (min-width: 576px) and (max-width: 768.98px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
+@media (min-width: 576px) and (max-width: 800px) { /* ajuste de media query específico a 800px */
+  .contenedor-novedades {
+    flex-direction: column;
+  }
+  .contenedor-novedades .texto-novedades {
+    width: 100%;
+  }
+  .contenedor-novedades .spotify {
+    width: 100%;
+    display: block;
+  }
+  .contenedor-novedades .imagenes-novedades {
+    width: 100%;
+    margin: auto;
+  }
+  .contenedor-novedades .imagenes-novedades img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .contenedor-novedades .imagenes-novedades figcaption {
+    margin-left: 0;
+  }
   .contenedor-grid {
     grid-template-columns: 1fr;
     grid-template-areas: "imagen1" "texto1" "imagen2" "texto2" "imagen3" "texto3";
   }
-}
-@media (min-width: 576px) and (max-width: 991.98px) and (min-width: 576px) and (max-width: 650px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
   .contenedor-cards .card {
     width: 37%;
   }
-}
-@media (min-width: 576px) and (max-width: 991.98px) and (min-width: 576px) and (max-width: 800px) { /* ajuste de media query para un rango en específico porque ya no quedaba bien con 2 columnas */
   .contenedor-form {
     flex-direction: column;
   }
