@@ -122,3 +122,12 @@
         }
     }
 }
+
+@media (max-width: 390px) { /* ajuste específico a 390px */
+
+    .contenedor-cards {
+        .card {
+            width: 100%;
+        }
+    }
+}

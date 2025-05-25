@@ -478,6 +478,11 @@ footer .redes-sociales img {
     width: 100%;
   }
 }
+@media (max-width: 390px) { /* ajuste específico a 390px */
+  .contenedor-cards .card {
+    width: 100%;
+  }
+}
 /*  media query - tablet ______________________________________________________________________________________________*/
 @media (min-width: 576px) and (max-width: 991.98px) {
   h1 {
@@ -525,7 +530,7 @@ footer .redes-sociales img {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (min-width: 576px) and (max-width: 800px) { /* ajuste de media query específico a 800px */
+@media (min-width: 576px) and (max-width: 800px) { /* ajuste específico a 800px */
   .contenedor-novedades {
     flex-direction: column;
   }
